@@ -116,13 +116,13 @@
 
         .popup-window {
             display: none;
-            position: fixed;
+            position: auto;
             z-index: 1;
             left: 0;
             top: 0;
             width: 160px; /* Adjust width as needed */
             height: 100%; /* Full height */
-            overflow: hidden; 
+            overflow: auto; /* Allow scrolling */
             background-color: rgba(0, 0, 0, 0.897);
             display: flex; /* Enable flexbox */
             justify-content: center; /* Center horizontally */
@@ -171,7 +171,7 @@
             height: 100%;
         }
         .iframe-container iframe {
-            flex: 1 1 auto;
+            flex: 1 1 100%;
             border: 1px solid black;
         }
         .control-panel {
@@ -203,34 +203,12 @@
     
   <div class="popup-window" id="popup-window">
     <div class="popup-content">
-      
-      <script async="async" data-cfasync="false" src="//pl23219128.highrevenuenetwork.com/16f1a8deb1d125c94663324f488130f9/invoke.js"></script>
-      <div id="container-16f1a8deb1d125c94663324f488130f9"></div>
+      <iframe src="https://dilprofg.blogspot.com/2024/07/25-ways-to-make-money-online-offline.html" width="5000" height="690" style="border:none;"></iframe>
     </div>
   </div>
   <div class="popup-window_R" id="popup-window_R">
     <div class="popup-content">
-      
-      <script type="text/javascript">
-	atOptions = {
-		'key' : 'f95543b1807c7de10128f653e90e7ec2',
-		'format' : 'iframe',
-		'height' : 600,
-		'width' : 160,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.topcreativeformat.com/f95543b1807c7de10128f653e90e7ec2/invoke.js"></script>
-<script type="text/javascript">
-	atOptions = {
-		'key' : 'f95543b1807c7de10128f653e90e7ec2',
-		'format' : 'iframe',
-		'height' : 600,
-		'width' : 160,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.topcreativeformat.com/f95543b1807c7de10128f653e90e7ec2/invoke.js"></script>
+      <iframe src="https://dilprofg.blogspot.com/2024/07/25-ways-to-make-money-online-offline.html" width="5000" height="690" style="border:none;"></iframe>
     </div>
   </div>
 
@@ -241,7 +219,7 @@
       }
       openPopup(); // Show popup when the page loads
       openPopup_R(); // Show popup when the page loads
-      setInterval(refreshPopups, 40000); // Refresh popups every 40 seconds
+      setInterval(refreshPopups, 25000); // Refresh popups every 40 seconds
     });
 
     function openPopup() {
@@ -254,16 +232,16 @@
 
     function refreshPopups() {
       // Reload the content of the first popup
-      var popup1 = document.getElementById("container-16f1a8deb1d125c94663324f488130f9");
-      var oldContent1 = popup1.innerHTML;
-      popup1.innerHTML = "";
-      popup1.innerHTML = oldContent1;
+      var popup1 = document.getElementById("popup-window").querySelector('iframe');
+      var oldSrc1 = popup1.src;
+      popup1.src = ""; // Clear the src to force reload
+      popup1.src = oldSrc1; // Reset the src to original
 
       // Reload the content of the second popup
-      var popup2 = document.getElementById("popup-window_R").querySelector('.popup-content');
-      var oldContent2 = popup2.innerHTML;
-      popup2.innerHTML = "";
-      popup2.innerHTML = oldContent2;
+      var popup2 = document.getElementById("popup-window_R").querySelector('iframe');
+      var oldSrc2 = popup2.src;
+      popup2.src = ""; // Clear the src to force reload
+      popup2.src = oldSrc2; // Reset the src to original
     }
   </script>
 
@@ -402,4 +380,5 @@
   </script>
 </body>
 </html>
+
 
