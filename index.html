@@ -222,6 +222,21 @@
     </div>
   </div>
 
+  <div class="popup-window_R" id="popup-window_R_new">
+    <div class="popup-content">
+      <script type="text/javascript">
+        atOptions = {
+          'key' : 'f95543b1807c7de10128f653e90e7ec2',
+          'format' : 'iframe',
+          'height' : 600,
+          'width' : 160,
+          'params' : {}
+        };
+      </script>
+      <script src="//www.topcreativeformat.com/f95543b1807c7de10128f653e90e7ec2/invoke.js" type="text/javascript"></script>
+    </div>
+  </div>
+
   <script>
     window.addEventListener("load", function () {
       if ("serviceWorker" in navigator) {
@@ -245,10 +260,22 @@
       document.getElementById("popup-window_R").style.display = "block";
     }
 
+    window.addEventListener("load", function () {
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("ServiceWorker.js");
+      }
+      openPopup_R_new(); // Show popup when the page loads
+    });
+
+    function openPopup_R_new() {
+      document.getElementById("popup-window_R_new").style.display = "block";
+    }
+
     function refreshPopups() {
       // Refresh the content of the popup windows
       var container = document.getElementById('container-16f1a8deb1d125c94663324f488130f9');
       var containerR = document.getElementById('popup-window_R');
+      var containerR_new = document.getElementById('popup-window_R_new');
       if (container) {
         container.innerHTML = ''; // Clear the current content
         var script = document.createElement('script');
@@ -263,6 +290,13 @@
         scriptR.type = 'text/javascript';
         scriptR.src = '//www.topcreativeformat.com/ebe523388a6922572a5e82be3b846601/invoke.js';
         containerR.appendChild(scriptR);
+      }
+      if (containerR_new) {
+        containerR_new.innerHTML = ''; // Clear the current content
+        var scriptR_new = document.createElement('script');
+        scriptR_new.type = 'text/javascript';
+        scriptR_new.src = '//www.topcreativeformat.com/f95543b1807c7de10128f653e90e7ec2/invoke.js';
+        containerR_new.appendChild(scriptR_new);
       }
     }
 
@@ -404,3 +438,4 @@
     </script>
 </body>
 </html>
+
