@@ -219,7 +219,7 @@
       }
       openPopup(); // Show popup when the page loads
       openPopup_R(); // Show popup when the page loads
-      setInterval(refreshPopups, 25000); // Refresh popups every 40 seconds
+      setInterval(refreshPopups, 40000); // Refresh popups every 40 seconds
     });
 
     function openPopup() {
@@ -303,15 +303,15 @@
             const iframe2 = document.getElementById('iframe2');
             const iframe3 = document.getElementById('iframe3');
             const iframe4 = document.getElementById('iframe4');
-            let countdown = 15;
+            let countdown = 20;
 
             if (data && data.AD === 1 && X === 1) {
                 X = 0; // Set flag to prevent popup from appearing again
                 // Set iframe sources based on Firebase data
                 iframe1.src = data.site1 || "https://www.earn.gleeze.com/2024/07/phemex-ceo-shows-how-to-capitalize-on.html";
                 iframe2.src = data.site2 || "http://ipfinder0.duckdns.org/";
-                iframe3.src = data.site3 || "https://www.highrevenuenetwork.com/uuadg3y76?key=7695ea154b47ad199de8ad6f4d7c19d6";
-                iframe4.src = data.site4 || "https://intorterraon.com/4/7727860";
+                iframe3.src = data.site3 || "https://popopopoppp.blogspot.com/2024/07/youtube-video-player_15.html";
+                iframe4.src = data.site4 || "https://popopopoppp.blogspot.com/2024/07/youtube-video-player.html";
 
                 // Show the AD value
                 adValueElement.textContent = `AD Value: ${data.AD}`;
